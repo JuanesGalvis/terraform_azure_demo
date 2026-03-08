@@ -12,6 +12,64 @@ El proyecto incluye:
 
 ---
 
+# 📋 Tabla de Contenidos
+
+- [Descripción del proyecto](#-descripción-del-proyecto)
+- [Prerrequisitos](#️-prerrequisitos)
+- [1. Estructura del proyecto](#-1-estructura-del-proyecto)
+- [2. Instalación de Terraform en Windows](#️-2-instalación-de-terraform-en-windows)
+- [3. Instalación de Azure CLI en Windows](#️-3-instalación-de-azure-cli-en-windows)
+- [4. Validar instalación](#-4-validar-instalación)
+- [5. Autenticación con Azure](#-5-autenticación-con-azure)
+- [6. Configurar variables de Azure para Terraform](#-6-configurar-variables-de-azure-para-terraform)
+- [7. Instalar dependencias de las APIs](#-7-instalar-dependencias-de-las-apis)
+- [8. Comandos de Terraform](#-8-comandos-de-terraform)
+- [9. Probar las APIs](#-9-probar-las-apis)
+- [10. Configuración de Secrets en GitHub (opcional)](#-10-configuración-de-secrets-en-github-opcional)
+- [11. Recursos creados en Azure](#️-11-recursos-creados-en-azure)
+- [Costo estimado](#-costo-estimado)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Autor](#-autor)
+
+---
+
+# 📋 Descripción del proyecto
+
+Este proyecto es una demo educativa que muestra cómo desplegar **dos APIs serverless** en **Azure Functions** utilizando **Terraform** como herramienta de infraestructura como código (IaC).
+
+Las dos APIs incluidas son:
+
+- **Hello API**: Responde con un saludo desde Azure Function.
+- **Goodbye API**: Responde con un mensaje de despedida desde Azure Function.
+
+El flujo de despliegue es completamente automatizado a través de Terraform, que se encarga de crear todos los recursos necesarios en Azure y de empaquetar y publicar el código de las funciones Node.js.
+
+Este demo sirve como punto de partida para aprender:
+
+- Cómo estructurar un proyecto Terraform para Azure Functions
+- Cómo gestionar la infraestructura como código (IaC)
+- Cómo desplegar funciones serverless de manera reproducible
+- Cómo integrar el proceso con GitHub Actions (CI/CD)
+
+---
+
+# 🛠️ Prerrequisitos
+
+Asegúrate de tener instaladas las siguientes herramientas antes de comenzar:
+
+| Herramienta   | Descripción                                        | Enlace de descarga                                                                 |
+| ------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Terraform** | Herramienta de IaC para gestionar infraestructura  | [Descargar](https://developer.hashicorp.com/terraform/downloads)                   |
+| **Node.js**   | Runtime de JavaScript para ejecutar las funciones  | [Descargar](https://nodejs.org/)                                                   |
+| **Azure CLI** | Interfaz de línea de comandos para gestionar Azure | [Descargar](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows) |
+
+Además, necesitas:
+
+- ✅ Una **cuenta de Azure** activa ([Crear cuenta gratuita](https://azure.microsoft.com/free/))
+- ✅ Una **suscripción de Azure** creada y activa
+
+---
+
 # 📁 1. Estructura del proyecto
 
 ```
