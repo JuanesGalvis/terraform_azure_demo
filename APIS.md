@@ -1,0 +1,7 @@
+goodbye_app_name = "tf-demo-goodbye"
+goodbye_function_url = "https://tf-demo-goodbye.azurewebsites.net/api/goodbye"
+hello_app_name = "tf-demo-hello"
+hello_function_url = "https://tf-demo-hello.azurewebsites.net/api/hello"
+resource_group = "tf-demo-rg"
+test_goodbye_command = "curl \"https://tf-demo-goodbye.azurewebsites.net/api/goodbye?nombre=TuNombre\""
+test_hello_command = "curl \"https://tf-demo-hello.azurewebsites.net/api/hello?nombre=TuNombre\""

@@ -1,0 +1,11 @@
+{
+  "name": "goodbye-function",
+  "version": "1.0.0",
+  "main": "src/functions/goodbye.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  }
+}

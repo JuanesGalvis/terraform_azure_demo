@@ -1,0 +1,101 @@
+# ==========================================
+
+# Terraform
+
+# ==========================================
+
+# Directorio de plugins y módulos
+
+.terraform/
+
+# Archivos de estado
+
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Override files
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plan files
+
+*.tfplan
+
+# Lock file (opcional ignorarlo si quieres reproducibilidad)
+
+#.terraform.lock.hcl
+
+# ==========================================
+
+# Azure / credenciales
+
+# ==========================================
+
+*.pem
+*.key
+*.env
+.env.*
+
+# ==========================================
+
+# Node.js
+
+# ==========================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+
+# Build / artifacts
+
+# ==========================================
+
+*.zip
+dist/
+build/
+
+# ==========================================
+
+# OS / IDE
+
+# ==========================================
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# VSCode
+
+.vscode/
+
+# JetBrains
+
+.idea/
+
+# ==========================================
+
+# Logs
+
+# ==========================================
+
+*.log
+logs/
+
+# ==========================================
+
+# Coverage
+
+# ==========================================
+
+coverage/
